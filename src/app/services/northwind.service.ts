@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { EmployeesType } from '../models/northwind/employees-type';
 import { CategoriesType } from '../models/northwind/categories-type';
+import { EmployeesType } from '../models/northwind/employees-type';
 import { Northwind } from '../static-data/northwind';
 
 @Injectable({
