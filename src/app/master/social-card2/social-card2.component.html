@@ -1,0 +1,205 @@
+<div class="row-layout group">
+  <p class="ig-typography__subtitle-2 text">
+    Social Card. Data Repeat. Width unset. Fixed Height.
+  </p>
+</div>
+<div class="row-layout group_1">
+  @for (item of cardContentCardContent; track item) {
+    <igx-card class="card">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle">
+            <igx-icon>
+              person
+            </igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          {{ item.CardTitle }}
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+          {{ item.Subtitle }}
+        </h5>
+      </igx-card-header>
+      <igx-card-media height="400px" class="media-content">
+        <img [src]="item.Image" class="image" />
+      </igx-card-media>
+      <igx-card-content class="body-content">
+        <p class="ig-typography__body-2 text_1">
+          {{ item.Description }}
+        </p>
+      </igx-card-content>
+      <igx-card-actions class="actions-content">
+        <ng-container igxStart>
+          <button igxButton="contained" igxRipple class="button">
+            Button
+          </button>
+        </ng-container>
+        <ng-container igxEnd>
+          <button igxRipple igxIconButton="flat">
+            <igx-icon>
+              favorite
+            </igx-icon>
+          </button>
+          <button igxRipple igxIconButton="flat">
+            <igx-icon>
+              bookmark
+            </igx-icon>
+          </button>
+          <button igxRipple igxIconButton="flat">
+            <igx-icon>
+              share
+            </igx-icon>
+          </button>
+        </ng-container>
+      </igx-card-actions>
+    </igx-card>
+  }
+  <igx-card class="card">
+    <igx-card-header>
+      <div igxCardThumbnail>
+        <igx-avatar shape="circle">
+          <igx-icon>
+            person
+          </igx-icon>
+        </igx-avatar>
+      </div>
+      <h3 igxCardHeaderTitle>
+        Keep It Simple
+      </h3>
+      <h5 igxCardHeaderSubtitle>
+        Design Principles
+      </h5>
+    </igx-card-header>
+    <igx-card-media height="400px" class="media-content">
+      <img src="/assets/Simple.png" class="image" />
+    </igx-card-media>
+    <igx-card-content class="body-content">
+      <p class="ig-typography__body-2 text_1">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus lectus ut urna blandit aliquam. Fusce ac est mauris. Etiam vulputate ante vel quam molestie, at finibus risus condimentum. Proin lobortis faucibus tortor, quis condimentum purus. Nulla quis odio pulvinar, rutrum est vitae, scelerisque orci.
+      </p>
+    </igx-card-content>
+    <igx-card-actions class="actions-content">
+      <ng-container igxStart>
+        <button igxButton="contained" igxRipple class="button">
+          Button
+        </button>
+      </ng-container>
+      <ng-container igxEnd>
+        <button igxRipple igxIconButton="flat">
+          <igx-icon>
+            favorite
+          </igx-icon>
+        </button>
+        <button igxRipple igxIconButton="flat">
+          <igx-icon>
+            bookmark
+          </igx-icon>
+        </button>
+        <button igxRipple igxIconButton="flat">
+          <igx-icon>
+            share
+          </igx-icon>
+        </button>
+      </ng-container>
+    </igx-card-actions>
+  </igx-card>
+  <igx-card class="card">
+    <igx-card-header>
+      <div igxCardThumbnail>
+        <igx-avatar shape="circle">
+          <igx-icon>
+            person
+          </igx-icon>
+        </igx-avatar>
+      </div>
+      <h3 igxCardHeaderTitle>
+        Less Is More
+      </h3>
+      <h5 igxCardHeaderSubtitle>
+        Design Principles
+      </h5>
+    </igx-card-header>
+    <igx-card-media height="400px" class="media-content">
+      <img src="/assets/LessMore.png" class="image" />
+    </igx-card-media>
+    <igx-card-content class="body-content">
+      <p class="ig-typography__body-2 text_1">
+        Vivamus id mi suscipit, eleifend nisi vitae, iaculis eros. Morbi ex magna, lobortis eget justo eu, tincidunt faucibus ante. Duis laoreet feugiat est, eget aliquet sem. Phasellus molestie tincidunt enim. Etiam dictum mi suscipit justo felis, id sollicitudin velit egestas vel. Ut convallis augue et ultrices eleifend  tincidunt. Proin viverra dui sed ante justo felis convallis dictum sollicitudin . Maecenas id velit ipsum.
+      </p>
+    </igx-card-content>
+    <igx-card-actions class="actions-content">
+      <ng-container igxStart>
+        <button igxButton="contained" igxRipple class="button">
+          Button
+        </button>
+      </ng-container>
+      <ng-container igxEnd>
+        <button igxRipple igxIconButton="flat">
+          <igx-icon>
+            favorite
+          </igx-icon>
+        </button>
+        <button igxRipple igxIconButton="flat">
+          <igx-icon>
+            bookmark
+          </igx-icon>
+        </button>
+        <button igxRipple igxIconButton="flat">
+          <igx-icon>
+            share
+          </igx-icon>
+        </button>
+      </ng-container>
+    </igx-card-actions>
+  </igx-card>
+  <igx-card class="card">
+    <igx-card-header>
+      <div igxCardThumbnail>
+        <igx-avatar shape="circle">
+          <igx-icon>
+            person
+          </igx-icon>
+        </igx-avatar>
+      </div>
+      <h3 igxCardHeaderTitle>
+        You Are Not the User
+      </h3>
+      <h5 igxCardHeaderSubtitle>
+        Design Principles
+      </h5>
+    </igx-card-header>
+    <igx-card-media height="400px" class="media-content">
+      <img src="/assets/NotUser.png" class="image" />
+    </igx-card-media>
+    <igx-card-content class="body-content">
+      <p class="ig-typography__body-2 text_1">
+        Aenean vitae sollicitudin risus, et sollicitudin ipsum. Donec bibendum mauris at faucibus consectetur. Nam scelerisque justo nec feugiat finibus. Duis mauris lectus, porta a metus et, placerat posuere dui. Sed commodo elit libero, eu consectetur urna vestibulum in. Nulla facilisi. Proin posuere rhoncus ligula, nec egestas mi bibendum vel.
+      </p>
+    </igx-card-content>
+    <igx-card-actions class="actions-content">
+      <ng-container igxStart>
+        <button igxButton="contained" igxRipple class="button">
+          Button
+        </button>
+      </ng-container>
+      <ng-container igxEnd>
+        <button igxRipple igxIconButton="flat">
+          <igx-icon>
+            favorite
+          </igx-icon>
+        </button>
+        <button igxRipple igxIconButton="flat">
+          <igx-icon>
+            bookmark
+          </igx-icon>
+        </button>
+        <button igxRipple igxIconButton="flat">
+          <igx-icon>
+            share
+          </igx-icon>
+        </button>
+      </ng-container>
+    </igx-card-actions>
+  </igx-card>
+</div>

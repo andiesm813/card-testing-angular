@@ -1,0 +1,57 @@
+<igx-nav-drawer [isOpen]="true" [pin]="true" width="240px" class="nav-drawer">
+  <ng-template igxDrawer>
+    @for (item of northwindCategories; track item) {
+      <div igxDrawerItem igxRipple routerLink="/master/default-card1">
+        <igx-icon class="icon">
+          dashboard
+        </igx-icon>
+        <span>Default Card 1</span>
+      </div>
+    }
+    <div igxDrawerItem igxRipple routerLink="/master/default-card2">
+      <igx-icon class="icon">
+        dashboard
+      </igx-icon>
+      <span>Default Card 2</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/master/actions-column1">
+      <igx-icon class="icon">
+        dashboard
+      </igx-icon>
+      <span>Actions Column 1</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/master/actions-column2">
+      <igx-icon class="icon">
+        dashboard
+      </igx-icon>
+      <span>Actions Column 2</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/master/media-column1">
+      <igx-icon class="icon">
+        dashboard
+      </igx-icon>
+      <span>Media Column 1</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/master/media-column2">
+      <igx-icon class="icon">
+        dashboard
+      </igx-icon>
+      <span>Media Column 2</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/master/social-card1">
+      <igx-icon class="icon">
+        dashboard
+      </igx-icon>
+      <span>Social Card 1</span>
+    </div>
+    <div igxDrawerItem igxRipple routerLink="/master/social-card2">
+      <igx-icon class="icon">
+        dashboard
+      </igx-icon>
+      <span>Social Card 2</span>
+    </div>
+  </ng-template>
+</igx-nav-drawer>
+<div class="view-container">
+  <router-outlet></router-outlet>
+</div>
